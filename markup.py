@@ -1,13 +1,20 @@
 
 from telegram.ext import CallbackContext
 
-from telegram import ReplyKeyboardMarkup, Update
+from telegram import ReplyKeyboardMarkup
+
+from telegram import Update
+
+
 
 # markup
 def start_bot(update: Update, context: CallbackContext) -> None:
     keyboard = ReplyKeyboardMarkup(
         [
-            ['/start' ,'/hello' ,'/sendPhoto' ,'/sendPhotoReply' ,'/printUpdate' ,'/whoAmI', '/money']
+            ['/start' ,'/hello'  , '/money'],
+            ['/sendPhoto' ,'/sendPhotoReply'],
+            ['/printUpdate' ,'/whoAmI']
+
         ],
         resize_keyboard=True,
         one_time_keyboard=True

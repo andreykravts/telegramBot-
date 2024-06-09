@@ -6,11 +6,13 @@ command5 - printUpdate
 command6 - tell me who I am
 
 start - start
-hello - hello
-sendPhoto - sendPhoto
-sendPhotoReply - sendPhotoReply
-printUpdate - printUpdateInfo
-whoAmI - printMyName
+hi - hi
+photo - getPhoto
+photo2 - getPhoto
+pu - printUpdate
+who - printMyName
 
 command1 - Description
 command2 - Another description
+
+

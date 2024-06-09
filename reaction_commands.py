@@ -1,16 +1,11 @@
 import json
 
-from telegram.ext import CallbackContext
+from telegram.ext import CallbackContext, ConversationHandler
 
-from telegram import ReplyKeyboardMarkup, Update
+from telegram import  Update
 
 import config
 # reaction
-
-
-
-
-
 
 def buy_money(update: Update, context: CallbackContext) -> None:
     context.bot.send_message(update.effective_chat.id, 'You buy $50 dollars')
@@ -19,11 +14,7 @@ def sell_money(update: Update, context: CallbackContext) -> None:
     context.bot.send_message(update.effective_chat.id, 'You sell %50 dollars')
 
 def keep_quiet_with_smart_look(update: Update, context: CallbackContext) -> None:
-    context.bot.send_message(update.effective_chat.id, 'keep_quiet_with_smart_look')
-
-
-
-
+    context.bot.send_message(update.effective_chat.id, 'hmm, one second please')
 
 
 # def start_bot(update: Update, context: CallbackContext) -> None:

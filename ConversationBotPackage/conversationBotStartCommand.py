@@ -3,15 +3,8 @@ from telegram.ext import (
     CallbackContext
 )
 
+from ConversationBotPackage import regularMarkupConvBot
+
+
 def start_bot(update: Update, context: CallbackContext) -> None:
-    keyboard = ReplyKeyboardMarkup(
-        [
-            ['Заполнить анкету'],
-            ['/start' ,'/hi'  , '/money'],
-            ['/photo' ,'/photo2'],
-            ['/pu' ,'/who']
-        ],
-        resize_keyboard=True,
-        one_time_keyboard=True
-    )
-    update.message.reply_text('Я бот! Зачем я создан?!', reply_markup=keyboard)
+    update.message.reply_text('Я бот! Зачем я создан?!', reply_markup=regularMarkupConvBot.get_start_keyboard())

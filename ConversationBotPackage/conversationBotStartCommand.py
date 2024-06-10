@@ -6,7 +6,10 @@ from telegram.ext import (
 def start_bot(update: Update, context: CallbackContext) -> None:
     keyboard = ReplyKeyboardMarkup(
         [
-            ['Заполнить анкету']
+            ['Заполнить анкету'],
+            ['/start' ,'/hi'  , '/money'],
+            ['/photo' ,'/photo2'],
+            ['/pu' ,'/who']
         ],
         resize_keyboard=True,
         one_time_keyboard=True

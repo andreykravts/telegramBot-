@@ -27,12 +27,12 @@ def say_hello(update: Update, context: CallbackContext) -> None:
     context.bot.send_message(update.effective_chat.id, 'Hello')
 
 def send_photo(update: Update, context: CallbackContext) -> None:
-    with open('photo/picture.jpg', 'rb') as photo:
+    with open('../photo/picture.jpg', 'rb') as photo:
         # https://docs.python-telegram-bot.org/en/v13.13/telegram.bot.html#telegram.Bot.send_animation
         context.bot.send_photo(update.effective_chat.id, photo)
 
 def send_photo_reply(update: Update, context: CallbackContext) -> None:
-    with open('photo/picture.jpg', 'rb') as photo:
+    with open('../photo/picture.jpg', 'rb') as photo:
         update.message.reply_photo(photo)
 
 def print_update(update: Update, context: CallbackContext) -> None:

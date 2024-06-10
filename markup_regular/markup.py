@@ -11,9 +11,9 @@ from telegram import Update
 def start_bot(update: Update, context: CallbackContext) -> None:
     keyboard = ReplyKeyboardMarkup(
         [
-            ['/start' ,'/hello'  , '/money'],
-            ['/sendPhoto' ,'/sendPhotoReply'],
-            ['/printUpdate' ,'/whoAmI']
+            ['/start' ,'/hi'  , '/money'],
+            ['/photo' ,'/photo2'],
+            ['/pu' ,'/who']
 
         ],
         resize_keyboard=True,

@@ -1,9 +1,3 @@
-command1 - start bot
-command2 - say hello
-command3 - sendPhoto
-command4 - sendPhotoReply
-command5 - printUpdate
-command6 - tell me who I am
 
 start - start
 hi - hi
@@ -12,7 +6,5 @@ photo2 - getPhoto
 pu - printUpdate
 who - printMyName
 
-command1 - Description
-command2 - Another description
 
 
